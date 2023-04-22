@@ -10,6 +10,7 @@ import Memo from './components/memo';
 import HookMemo from './components/hookmemo';
 import Reducer from './components/reducer';
 import ToDoListReducer from './components/todolistreducer';
+import Context from './components/context';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -22,6 +23,7 @@ function App() {
   const [showHookMemo, setShowHookMemo] = useState(false)
   const [showHookReducer, setShowHookReducer] = useState(false)
   const [showToDoList, setShowToDoList] = useState(false)
+  const [showContext, setShowContext] = useState(false)
   return (
     <div style={{ padding: 32}}>
       <button onClick={() => setShow(!show)}>Toggle</button>
@@ -53,6 +55,9 @@ function App() {
       <br></br>
       <button onClick={() => setShowToDoList(!showToDoList)}>ToDoList</button>
       {showToDoList && <ToDoListReducer />}
+      <br></br>
+      <button onClick={() => setShowContext(!showContext)}>Context</button>
+      {showContext && <Context />}
     </div>
   )
 }
