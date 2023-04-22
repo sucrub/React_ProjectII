@@ -1,4 +1,4 @@
-import { useState, useReducer } from "react"
+import { useReducer } from "react"
 
 const initState = 0;
 const UP_ACTION = 'up';

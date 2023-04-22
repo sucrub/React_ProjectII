@@ -1,0 +1,1 @@
+- Tùy chỉnh ref của function component
