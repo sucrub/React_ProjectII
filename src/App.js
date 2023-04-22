@@ -1,16 +1,16 @@
 import './App.css';
 import { useState } from 'react';
-import Content from './components/content';
-import Resize from './components/resize';
-import Timer from './components/timer';
-import Avatar from './components/avatar';
-import Chat from './components/chat';
-import Ref from './components/ref';
-import Memo from './components/memo';
-import HookMemo from './components/hookmemo';
-import Reducer from './components/reducer';
-import ToDoListReducer from './components/todolistreducer';
-import Context from './components/context';
+import Content from './components/useEffect/content';
+import Resize from './components/useEffect/resize';
+import Timer from './components/useEffect/timer';
+import Avatar from './components/useEffect/avatar';
+import Chat from './components/useEffect/chat';
+import Ref from './components/useRef/ref';
+import Memo from './components/useMemo/memo';
+import HookMemo from './components/useMemo/hookmemo';
+import Reducer from './components/useReducer/reducer';
+import ToDoListReducer from './components/useReducer/todolistreducer';
+import Context from './components/useContext/context';
 
 function App() {
   const [show, setShow] = useState(false);
