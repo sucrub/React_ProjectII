@@ -1,5 +1,10 @@
+// import { Routes, Route, Link } from 'react-router-dom'
 import './App.css';
-import { useStore, actions } from './store';
+import HomePage from './pages/HomePage';
+// import Home from './pages/Home';
+// import Contact from './pages/Contact';
+// import News from './pages/News';
+// import { useStore, actions } from './store';
 // import { useState } from 'react';
 // import Content from './components/useEffect/content';
 // import Resize from './components/useEffect/resize';
@@ -61,31 +66,58 @@ function App() {
   //     {showContext && <Context />}
   //   </div>
   // )
-  const [state, dispatch] = useStore();
-  const {todos, todoInput} = state;
+//   const [state, dispatch] = useStore();
+//   const {todos, todoInput} = state;
 
-  const handleSubmit = () => {
-    dispatch(actions.addTodo(todoInput))
-  }
+//   const handleSubmit = () => {
+//     dispatch(actions.addTodo(todoInput))
+//   }
 
+//   return (
+//     <div>
+//       <input 
+//         value={todoInput}
+//         placeholder='Enter...'
+//         onChange={e => {
+//           dispatch(actions.setTodoInput(e.target.value))
+//         }}
+//       />
+//       <button onClick={handleSubmit}>Add</button>
+//       <ul>
+//         {todos.map((todo, index) => (
+//           <li key={index}>{todo}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
+  // return (
+  //   <div>
+  //     <nav>
+  //       <ul>
+  //         <li>
+  //           <Link to='/home'>Home</Link>
+  //         </li>
+  //         <li>
+  //           <Link to='/news'>News</Link>
+  //         </li>
+  //         <li>
+  //           <Link to='/contact'>Contact</Link>
+  //         </li>
+  //       </ul>
+  //     </nav>
+  //     <Routes>
+  //       <Route path="/home" element={<Home />} />
+  //       <Route path="/news" element={<News />} />
+  //       <Route path="/contact" element={<Contact />} />
+  //     </Routes>
+  //   </div>
+  // )
   return (
     <div>
-      <input 
-        value={todoInput}
-        placeholder='Enter...'
-        onChange={e => {
-          dispatch(actions.setTodoInput(e.target.value))
-        }}
-      />
-      <button onClick={handleSubmit}>Add</button>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
-        ))}
-      </ul>
+      <HomePage />
     </div>
   )
 }
-
 export default App;
 
